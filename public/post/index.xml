@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on My New Hugo Site</title>
+    <link>http://10.32.1.124/post/</link>
+    <description>Recent content in Posts on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 24 Jun 2021 13:38:34 +0800</lastBuildDate><atom:link href="http://10.32.1.124/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Firstpost</title>
+      <link>http://10.32.1.124/post/28956/</link>
+      <pubDate>Thu, 24 Jun 2021 13:38:34 +0800</pubDate>
+      
+      <guid>http://10.32.1.124/post/28956/</guid>
+      <description>From too much love of living, From hope and fear set free, We thank with brief thanksgiving, Whatever gods may be, That no life lives forever, That dead men rise up never, That even the weariest river winds somewhere safe to sea. &amp;ndash; Swinburne
+New screensaver released: Curtains for Windows.
+A strong conviction that something must be done is the parent of many bad measures. &amp;ndash; Daniel Webster
+Ho! Tom Bombadil, Tom Bombadillo!</description>
+    </item>
+    
+  </channel>
+</rss>
