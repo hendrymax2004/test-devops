@@ -1,33 +1,37 @@
 #!/bin/bash
 #Description: this script is used to generate a random new post for hugo website
 
-hugo new site hugosite
+if [ ! -d "hugosite" ]; then
+	echo 'create new website'
+  hugo new site hugosite >> log.txt  
+  #download hugo themes
+  git clone https://github.com/vaga/hugo-theme-m10c.git themes/m10c
+fi
 
 cd hugosite
 
 #generate a new post file with the given name or use a random name
 if [ ! -n "$1" ] ;then
-  ra=$RANDOM
+  rb=$RANDOM
 else
-  ra=$1  
+  rb=$1
 fi
-  
-if [ ! -f "content/post/$ra.md" ]; then  
-  hugo new post/$ra.md
-else 
-  echo 'Error, '$ra'.md already exists, please change the file name '
+
+if [ ! -f "content/post/$rb.md" ]; then
+  hugo new post/$rb.md
+else
+  echo 'Error, '$rb'.md already exists, please change the file name '
   exit
-fi  
+fi
 
 #echo the output of fortune command into the post file
-fortune >> content/post/$ra.md
+sed '4s/true/false/' content/post/$rb.md
+fortune >> content/post/$rb.md
 
-#download hugo themes
-git clone https://github.com/vaga/hugo-theme-m10c.git themes/m10c
 
 #generate the static content of the website
 use_theme='m10c'
-hugo -t $use_theme 
+hugo -t $use_theme
 
 #git push 
 cd public
